@@ -10,6 +10,6 @@
 #define MAX_ACC 1.0  	// m/s^2
 #define CONST_PWM 23.04 //PWM
 #define MAX_DCC -1  //m/s²
-#define CONST_PWM_FREIO 16.2 // PWM
+#define CONST_PWM_BRAKE 16.2 // PWM
 
 #endif
