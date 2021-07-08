@@ -89,16 +89,16 @@ int ReadMem::run()
             
 			if(assistant < MAX_DCC)
 			{
-				value_brake = ((MAX_DCC/10 -My_speed)*CONST_PWM_FREIO)*-1;
+				value_brake = ((MAX_DCC/10 -My_speed)*CONST_PWM_BRAKE)*-1;
 			}
 			else
 			{
-				value_brake = ((assistant/10.0 -My_speed)*CONST_PWM_FREIO)*-1;
+				value_brake = ((assistant/10.0 -My_speed)*CONST_PWM_BRAKE)*-1;
 			}
 
 			//analogWrite(PINO_MOTORPRINCIPAL,valor_pwm);
             std::cout<<"FREAR"<< std::endl;
-            value_brake = assistant*CONST_PWM_FREIO;
+            value_brake = assistant*CONST_PWM_BRAKE;
             analogWrite(PINO_MOTORFREIO,value_brake);
             
         }
